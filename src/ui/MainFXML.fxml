@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0" stylesheets="@../commons/css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <left>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="150.0" style="-fx-background-color: #1abc9c;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../commons/images/back.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="menu1" accessibleText="Test1" focusTraversable="false" onAction="#handlerActionMenu" prefHeight="63.0" prefWidth="150.0" styleClass="btn-menu-item" text="Menu 1" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="menu2" accessibleText="Test2" focusTraversable="false" layoutX="10.0" layoutY="95.0" onAction="#handlerActionMenu" prefHeight="63.0" prefWidth="150.0" styleClass="btn-menu-item" text="Menu 2" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="menu3" accessibleText="Test3" focusTraversable="false" layoutX="10.0" layoutY="158.0" onAction="#handlerActionMenu" prefHeight="63.0" prefWidth="150.0" styleClass="btn-menu-item" text="Menu 3" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="menu4" accessibleText="Test4" focusTraversable="false" layoutX="10.0" layoutY="221.0" onAction="#handlerActionMenu" prefHeight="63.0" prefWidth="150.0" styleClass="btn-menu-item" text="Menu 4" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="menu5" accessibleText="Test5" focusTraversable="false" layoutX="10.0" layoutY="284.0" onAction="#handlerActionMenu" prefHeight="63.0" prefWidth="150.0" styleClass="btn-menu-item" text="Menu 5" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <StackPane fx:id="mainContainer" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <Button mnemonicParsing="false">
+               <graphic>
+                  <FontAwesomeIconView glyphName="POWER_OFF" size="18" />
+               </graphic>
+            </Button>
+            <SplitMenuButton mnemonicParsing="false" text="Hieu Tran">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Menu 1">
+                     <graphic>
+                        <Button mnemonicParsing="false" text="Button" />
+                     </graphic>
+                  </MenuItem>
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER" />
+               </graphic>
+            </SplitMenuButton>
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>
